@@ -1,0 +1,53 @@
+{
+  "name": "@stdlib/assert-is-uint8clampedarray",
+  "version": "0.0.0",
+  "description": "Test if a value is a Uint8ClampedArray.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/assert-is-uint8clampedarray.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdassert",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "uint8array",
+    "uint8",
+    "clamped",
+    "unsigned",
+    "integer",
+    "int",
+    "uint",
+    "byte",
+    "octet",
+    "buffer",
+    "typed",
+    "typed array",
+    "typed-array",
+    "array",
+    "is",
+    "isarray",
+    "istypedarray",
+    "type",
+    "check",
+    "validate",
+    "valid",
+    "isvalid",
+    "test"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
