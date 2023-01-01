@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is a [Uint8ClampedArray][mdn-uint8clampedarray].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-uint8clampedarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@deno/mod.js';
+var isUint8ClampedArray = require( '@stdlib/assert-is-uint8clampedarray' );
 ```
 
 #### isUint8ClampedArray( value )
@@ -39,7 +55,7 @@ import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is
 Tests if a value is a [`Uint8ClampedArray`][mdn-uint8clampedarray].
 
 ```javascript
-import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@deno/mod.js';
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
 
 var bool = isUint8ClampedArray( new Uint8ClampedArray( 10 ) );
 // returns true
@@ -59,16 +75,16 @@ bool = isUint8ClampedArray( [] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@deno/mod.js';
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
-import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@deno/mod.js';
-import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@deno/mod.js';
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@deno/mod.js';
+var Int8Array = require( '@stdlib/array-int8' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+var Int16Array = require( '@stdlib/array-int16' );
+var Uint16Array = require( '@stdlib/array-uint16' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint32Array = require( '@stdlib/array-uint32' );
+var Float32Array = require( '@stdlib/array-float32' );
+var Float64Array = require( '@stdlib/array-float64' );
+var isUint8ClampedArray = require( '@stdlib/assert-is-uint8clampedarray' );
 
 var bool = isUint8ClampedArray( new Uint8ClampedArray( 10 ) );
 // returns true
@@ -135,7 +151,7 @@ bool = isUint8ClampedArray( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -152,7 +168,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -199,9 +215,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array/tree/deno
+[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array
 
-[@stdlib/assert/is-uint8array]: https://github.com/stdlib-js/assert-is-uint8array/tree/deno
+[@stdlib/assert/is-uint8array]: https://github.com/stdlib-js/assert-is-uint8array
 
 <!-- </related-links> -->
 
