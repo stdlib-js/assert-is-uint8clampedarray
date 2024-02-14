@@ -35,32 +35,38 @@ limitations under the License.
 
 > Test if a value is a [Uint8ClampedArray][mdn-uint8clampedarray].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-uint8clampedarray
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isUint8ClampedArray = require( '@stdlib/assert-is-uint8clampedarray' );
+isUint8ClampedArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isUint8ClampedArray = require( 'path/to/vendor/umd/assert-is-uint8clampedarray/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isUint8ClampedArray;
+})();
+</script>
 ```
 
 #### isUint8ClampedArray( value )
@@ -87,17 +93,22 @@ bool = isUint8ClampedArray( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Int8Array = require( '@stdlib/array-int8' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
-var Int16Array = require( '@stdlib/array-int16' );
-var Uint16Array = require( '@stdlib/array-uint16' );
-var Int32Array = require( '@stdlib/array-int32' );
-var Uint32Array = require( '@stdlib/array-uint32' );
-var Float32Array = require( '@stdlib/array-float32' );
-var Float64Array = require( '@stdlib/array-float64' );
-var isUint8ClampedArray = require( '@stdlib/assert-is-uint8clampedarray' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isUint8ClampedArray( new Uint8ClampedArray( 10 ) );
 // returns true
@@ -134,6 +145,11 @@ bool = isUint8ClampedArray( {} );
 
 bool = isUint8ClampedArray( null );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -231,9 +247,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array
+[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array/tree/umd
 
-[@stdlib/assert/is-uint8array]: https://github.com/stdlib-js/assert-is-uint8array
+[@stdlib/assert/is-uint8array]: https://github.com/stdlib-js/assert-is-uint8array/tree/umd
 
 <!-- </related-links> -->
 
