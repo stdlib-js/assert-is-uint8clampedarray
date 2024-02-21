@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-uint8clampedarray/tags). For example,
+
+```javascript
 import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@v0.2.1-esm/index.mjs';
 ```
 
@@ -84,7 +89,7 @@ import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/in
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@v0.2.1-esm/index.mjs';
+import isUint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-uint8clampedarray@esm/index.mjs';
 
 var bool = isUint8ClampedArray( new Uint8ClampedArray( 10 ) );
 // returns true
